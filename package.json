@@ -12,8 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/onest": "^5.2.11",
     "@tailwindcss/vite": "^4.2.4",
     "astro": "^6.1.9",
+    "astro-noemail": "^1.0.0",
     "tailwindcss": "^4.2.4"
   }
 }
