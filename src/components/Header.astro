@@ -1,15 +1,13 @@
-<header class="flex justify-between items-center w-full py-10 px-10">
+<header class="flex flex-col md:flex-row justify-between items-center w-full py-5 px-4 md:px-10 gap-y-5">
 	<img
-		class="rounded-full w-30 h-30 object-cover border-blue-500 border-2"
+		class="rounded-full size-12 md:size-16 object-cover border-blue-500 border-2"
 		src="/images/Nico.jpeg"
 		alt="nicolas photo"/>
 
-	<nav class="flex flex-row gap-x-10 opacity-90">
-
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/projects">Projects</a>
-			<a href="/contact">Contact</a>
-		
+	<nav class="flex flex-row gap-x-6 md:gap-x-10 opacity-90 text-sm md:text-base font-medium bg-white/10 md:bg-transparent px-8 py-4 md:p-0 rounded-full border border-white/20 md:border-none backdrop-blur-md md:backdrop-blur-none">
+		<a href="#top" class="hover:text-yellow-200 transition-colors">Inicio</a>
+		<a href="#sobre-mi" class="hover:text-yellow-200 transition-colors">Sobre mí</a>
+		<a href="#stack" class="hover:text-yellow-200 transition-colors">Stack</a>
+		<a href="#proyectos" class="hover:text-yellow-200 transition-colors">Proyectos</a>
 	</nav>
 </header>

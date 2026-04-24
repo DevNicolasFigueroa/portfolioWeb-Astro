@@ -1,12 +1,11 @@
 ---
 import Header from "../components/Header.astro";
 import "../styles/global.css";
-import profile from "../assets/Nico.jpeg";
 import '@fontsource-variable/onest/wght.css';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -37,5 +36,33 @@ import '@fontsource-variable/onest/wght.css';
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+	}
+
+	@keyframes reveal {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.animate-reveal {
+		animation: reveal 0.8s ease-out forwards;
+	}
+
+	@keyframes shimmer {
+		0% { background-position: -200% center; }
+		100% { background-position: 200% center; }
+	}
+
+	.animate-shimmer {
+		background: linear-gradient(90deg, #ffffff 0%, #a855f7 25%, #ffffff 50%, #a855f7 75%, #ffffff 100%);
+		background-size: 200% auto;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: shimmer 5s linear infinite;
 	}
 </style>

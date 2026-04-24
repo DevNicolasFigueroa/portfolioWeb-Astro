@@ -1,0 +1,27 @@
+---
+const TAGS = {
+  HTML: { name: "HTML5", class: "bg-[#e34f26]/20 text-[#e34f26] border-[#e34f26]/30" },
+  CSS: { name: "CSS3", class: "bg-[#1572b6]/20 text-[#1572b6] border-[#1572b6]/30" },
+  JAVASCRIPT: { name: "JavaScript", class: "bg-[#f7df1e]/20 text-[#f7df1e] border-[#f7df1e]/30" },
+  TYPESCRIPT: { name: "TypeScript", class: "bg-[#3178c6]/20 text-[#3178c6] border-[#3178c6]/30" },
+  REACT: { name: "React.js", class: "bg-[#61dafb]/20 text-[#61dafb] border-[#61dafb]/30" },
+  ASTRO: { name: "Astro", class: "bg-[#ff5d01]/20 text-[#ff5d01] border-[#ff5d01]/30" },
+  TAILWIND: { name: "Tailwind CSS", class: "bg-[#06b6d4]/20 text-[#06b6d4] border-[#06b6d4]/30" },
+  NODE: { name: "Node.js", class: "bg-[#339933]/20 text-[#339933] border-[#339933]/30" },
+  SQL: { name: "SQL", class: "bg-[#00758f]/20 text-[#00758f] border-[#00758f]/30" },
+  MONGODB: { name: "MongoDB", class: "bg-[#47a248]/20 text-[#47a248] border-[#47a248]/30" },
+  GIT: { name: "Git", class: "bg-[#f05032]/20 text-[#f05032] border-[#f05032]/30" }
+}
+
+const techStack = [
+    TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.TYPESCRIPT, TAGS.REACT, TAGS.ASTRO, TAGS.TAILWIND, TAGS.NODE, TAGS.SQL, TAGS.MONGODB, TAGS.GIT
+]
+---
+
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+  {techStack.map((tech) => (
+    <div class={`flex items-center justify-center px-4 py-3 rounded-xl border backdrop-blur-sm transition-all duration-300 hover:scale-105 cursor-default shadow-sm ${tech.class}`}>
+      <span class="font-medium tracking-wide">{tech.name}</span>
+    </div>
+  ))}
+</div>
